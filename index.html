@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>buick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=no" />
+    <script>
+    /**
+     * 每个页面最顶端加入跳转代码
+     * @return {[type]} [description]
+     */
+      function fBrowserRedirect() {
+        var ua = navigator.userAgent.toLowerCase();
+        var Android = String(ua.match(/android/i)) == "android";
+        var iPad = String(ua.match(/ipad/i)) == "ipad";
+        var iPhone = String(ua.match(/iphone/i)) == "iphone";
+        if (!Android && !iPad && !iPhone) {
+          window.location = 'http://www.buick.com.cn?'+window.location.search;
+        }
+      }
+      // fBrowserRedirect();
+    </script>
+    <!-- 兼容性 每个页面必加-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 全局 每个页面必加 -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- 底部菜单 每个页面必加 -->
+    <link rel="stylesheet" href="css/bottomNav.css">
+    <!-- 顶部菜单 每个页面必加 -->
+    <link rel="stylesheet" href="css/topNav.css">
+    <!-- 单个页面添加 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 移动端滚动插件，必加 -->
+    <script src="script/iscroll.min.js"></script>
+    <!-- 加载插件 -->
+    <script src="script/PxLoader.js"></script>
+    <!-- 类似jquery 移动端插件 -->
+    <script src="script/zepto.min.js"></script>
+    <script src="script/touch.min.js"></script>
+    <!-- 微信分享控制 -->
+    <script src="script/share.js"></script>
+
+    <!-- 每个页面需要添加 -->
+    <script src="script/core.js"></script>
+    <!-- 服务端请求 -->
+    <script src="script/server/wizad.server.js"></script>
+</head>
+
+<body>
+    <div id="wrap">  
+        <header id="header">
+          <div class="drive"><a href="#" class="icondrive"><b></b>预约</a></div>
+          <div class="logo"><a href="#" class="iconLogo"></a></div>
+          <div class="menu"><a href="#" class="iconMenu"><b></b>菜单</a></div>
+          <img src="img/top_navline1.png">
+        </header>
+        <div id="container">
+            <div id="left_side"><!-- left_side --></div>
+            <!-- 页面更新这里 -->
+            <div id="content">
+            <div class="cars_nav">
+              <div class="cars_name">
+                <ul>
+                  <li><p>英朗XT</p></li>
+                  <li><p>英朗GT</p></li>
+                  <li><p>新凯越</p></li>
+                  <li><p>君威</p></li>
+                  <li><p>君威GS</p></li>
+                  <li><p>君越</p></li>
+                  <li><p>昂科拉</p></li>
+                  <li><p>昂科雷</p></li>
+                  <li><p>GL8豪华商务车</p></li>
+                  <li><p>GL8商务车</p></li>
+                </ul>       
+              </div>
+              <div id="shadeL" class="shadeL"><!--<img src="images/pic_leftArr.png" width="11" height="27" />--></div> 
+              <div id="shadeR" class="shadeR"><!--<img src="images/pic_rightArr.png" width="11" height="27" />--></div>
+            </div></div>  
+        </div>
+        <footer id="footer"><!-- footer --></footer>  
+    </div> 
+    <div id="right_side"> 
+    <!-- right_side -->
+    </div>  
+    <!-- 微信提示框 -->
+    <div class="weixin_share_tip">
+        <div class="tip"></div>
+    </div>
+
+    <!-- loading -->
+    <div class="loading" id="loading">
+        <p>加载中...</p>
+    </div>
+    <!-- 单个页面功能控制  -->
+    <script src="script/index.js"></script>
+   <!--  <script type="text/javascript">
+    $(function() {
+        init();
+    });
+    </script> -->
+</body>
+
+</html>
